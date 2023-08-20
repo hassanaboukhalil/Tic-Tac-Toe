@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic-Tac-Toe game</title>
+</head>
+<body onload="onlod()">
+    <div class="centering">
+        <h1>Tic-Tac-Toe</h1>
+    </div>
+    <div class="playersblock">
+        <div class="playernames">
+            <p style="font-weight: bold;width: 50%;">Player 1</p>
+            <p style="font-weight: bold;width: 50%;">Player 2</p>
+        </div><br>
+        <div class="circleandscore">
+            <svg height="20" width="20">
+                <circle id="circle1" cx="10" cy="10" r="10" fill="black" />
+            </svg>
+            <span id="score" style="color: white;font-weight: bold;">0 - 0</span>
+            <svg height="20" width="20">
+                <circle id="circle2" cx="10" cy="10" r="10" fill="black" />
+            </svg>
+            
+        </div>
+    </div>
+    <div class="centering" >
+        <h3 id="result"></h3><br>
+        <button class="restart-btn" id="restartbtn">Restart</button>
+        
+    </div>
+    
+    <div class="grid-container" id="boxescontainer">
+        <div class="grid-item resetcolor" id="box1" onclick="XorO(this)"></div>
+        <div class="grid-item resetcolor" id="box2" onclick="XorO(this)"></div>
+        <div class="grid-item resetcolor" id="box3" onclick="XorO(this)"></div>
+        <div class="grid-item resetcolor" id="box4" onclick="XorO(this)"></div>
+        <div class="grid-item resetcolor" id="box5" onclick="XorO(this)"></div>
+        <div class="grid-item resetcolor" id="box6" onclick="XorO(this)"></div>
+        <div class="grid-item resetcolor" id="box7" onclick="XorO(this)"></div>
+        <div class="grid-item resetcolor" id="box8" onclick="XorO(this)"></div>
+        <div class="grid-item resetcolor" id="box9" onclick="XorO(this)"></div>
+    </div>
+    <script src="./code.js"></script>
+</body>
+</html>
