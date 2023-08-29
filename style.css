@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+/* good colors :
+black color #242222
+#e39539
+#64ffda
+#0a192f */
+
+body{
+    background-color: #2d5289;
+}
+
+.centering{
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    
+}
+
+h1,h2,h3,p {
+    color: white;
+}
+
+.playersblock{
+    text-align: center;
+    margin: auto;
+    max-width: 300px;
+}
+
+.playernames{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    padding: 0px;
+}
+
+.circleandscore {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.restart-btn{
+    background-color: cyan;
+    color: #152d52;
+    opacity: 0.4;
+    cursor: not-allowed;
+    /* cursor:pointer; */
+    /* display:none; */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+    /* max-width: 300px;
+    height: 300px; */
+
+    max-width: 0px;
+    height: 0px;
+    transition: max-width 1.5s, height 1.5s;
+}
+
+.grid-item{
+
+    align-items: center;
+    /* padding: 25px; */
+    padding: 0px;
+    background-color: #00ffff;
+    /* border: 3px solid rgba(0, 0, 0, 0.8); */
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    background-size: 50%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    transition: padding 1.5s, border 1.5s;
+
+}
